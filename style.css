@@ -1,0 +1,112 @@
+
+* {
+        margin:0;
+        padding:0;
+        font-family: 'Roboto Condensed', sans-serif;
+        overflow:hidden;
+      }
+      body {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        /* Set the background */
+        background:url("https://img.freepik.com/premium-vector/trees-silhouette-with-birds-sky-scene-green_91606-120.jpg?size=626&ext=jpg&uid=R70230769&ga=GA1.2.569613443.1679329647&semt=ais");
+        background-size:cover;
+      }
+      main {
+        width:400px;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        gap:40px;
+        /* Create a transparent background with box-shadow */
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+      }
+      #search-bar{
+        width:80%;
+        background-color:transparent;
+        border:0px;
+        font-size:15px;
+        color:white;
+        border-radius:45px;
+        height:80%;
+        padding-left:7px;
+      }
+      #search-bar:focus{
+        outline:none;
+      }
+      .search{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:6px;
+        width:90%;
+        height:35px;
+        background-color:white;
+        border:2px solid #539165;
+        border-radius:45px;
+        /* Create a gradient background */
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        background: linear-gradient(to right, #38ef7d, #11998e);
+      }
+      .search i{
+        color:white;
+      }
+      #output-image{
+        width:80%;
+        height:50%;
+        background-color:white;
+        border-radius:10px;
+        /* Set the background image */
+        background: url("https://img.freepik.com/free-photo/3d-environment-project-scene_23-2148896002.jpg?w=740&t=st=1682107004~exp=1682107604~hmac=e8b1c4441a573b09a2ce2bfe3c3d9ff7b3429f22b0c215f14c7c030887d2a06d") no-repeat center center fixed;
+        background-size: cover;
+      }
+      #user-input{
+        width:99%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:5px;
+      }
+      #animal-input{
+        width:25%;
+      }
+      #user-input input{
+        background-color:white;
+        border-radius:20px;
+        border:0;
+        padding-left:6px;
+        height:30px;
+      }
+      #user-input input:focus{
+        border:2px solid #11998e;
+        padding-left:5px;
+        color:#539165;
+        outline:none;
+        background-color:white;
+      }
+      #animal-url{
+        width:50%;
+      }
+      #submit-animal{
+        border:2px solid #11998e;
+        border-radius:20px;
+        width:60px;
+        height:30px;
+        background-color:#38ef7d;
+        transition:0.5s;
+      }
+      #submit-animal:hover{
+        transform:scale(0.9);
+      }
+      h1{
+        color: #11998e;
+        text-shadow: 3px 3px 2px #38ef7d ;
+      }

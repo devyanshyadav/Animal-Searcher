@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import Google Fonts and Font Awesome icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Animal Searcher</title>
+</head>
+<body>
+<main>
+      <h1>Animal Searcher</h1>
+      <!-- Create the input fields to add new animals -->
+      <div id="user-input">
+        <input type="text" id="animal-input" placeholder="Dog">
+        <input type="text" id="animal-url" placeholder="Image Address">
+        <button onclick="execute()" id="submit-animal">Upload</button>
+      </div>
+      <!-- Create the search bar -->
+      <div class="search">
+        <input type="text" id="search-bar" onkeyup="result()" placeholder="Hit Enter" />
+        <i class="fa-solid fa-magnifying-glass" onclick="result()"></i>
+      </div>
+      <!-- Create the image output container -->
+      <div id="output-image"></div>
+    </main>
+</body>
+</html>
